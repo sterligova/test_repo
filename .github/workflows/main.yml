@@ -9,3 +9,9 @@ jobs:
     steps:
       - name: Print hello
         run: echo "hello world!"
+  test:
+    needs: hello
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print test
+        run: echo "hello test!"
